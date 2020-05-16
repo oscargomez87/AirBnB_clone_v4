@@ -4,9 +4,8 @@ You must use jQuery
 Listen for changes on each INPUT checkbox tag
 */
 
-$(document).ready(function() {
-    
-    const amen = {};
+$(document).ready(function () {
+  const amen = {};
 
   $('input:checkbox').click(function () {
     $(this).each(function () {
