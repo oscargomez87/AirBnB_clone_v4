@@ -5,8 +5,7 @@ Listen for changes on each INPUT checkbox tag
 */
 
 $(document).ready(function() {
-    console.log("ready!");
-
+    
     const amen = {};
 
   $('input:checkbox').click(function () {
