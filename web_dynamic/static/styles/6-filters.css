@@ -46,10 +46,6 @@ button:hover {
     width: 25%;
     border-right: 1px solid #DDDDDD;
 }
-.amenities {
-    height: 100%;
-    width: 25%;
-}
 
 .popover {
     visibility: hidden;
