@@ -21,13 +21,17 @@ $(document).ready(function () {
       $('.amenities h4').html('&nbsp');
     }
   });
-});
 
-const url = 'http://0.0.0.0:5001/api/v1/status/'
-$.get (url, function(data) {
-  if (data.status === 'OK') {
-    $('DIV#api_status').addClass('available');
-  } else {
-    $('DIV#api_status').removeClass('available');
-  }
+  $.ajax({
+    type: 'GET',
+    url = 'http://0.0.0.0:5001/api/v1/status/',
+    context: document.ready,
+    success: (function(data, statusCode) {
+    if (statusCode === 200) {
+      $('DIV#api_status').addClass('available');
+    } else {
+      $('DIV#api_status').removeClass('available');
+    }
+    });
+  });
 });

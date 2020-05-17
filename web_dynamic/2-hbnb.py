@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Starts a Flash Web Application """
 from flask import Flask, render_template
+from flasgger import Swagger
 from models import storage
 from models.amenity import Amenity
 from models.city import City
@@ -8,7 +9,9 @@ from models.place import Place
 from models.state import State
 from os import environ
 import uuid
+
 app = Flask(__name__)
+swagger = Swagger(app)
 
 
 @app.teardown_appcontext
