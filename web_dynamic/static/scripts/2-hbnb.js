@@ -25,9 +25,8 @@ $(document).ready(function () {
   $.ajax({
     type: 'GET',
     url = 'http://0.0.0.0:5001/api/v1/status/',
-    context: document.ready,
-    success: (function(data, statusCode) {
-      if (statusCode === 200) {
+    success: (function(data, textStatus) {
+      if (textStatus === 'OK') {
 	$('DIV#api_status').addClass('available');
       } else {
 	$('DIV#api_status').removeClass('available');
