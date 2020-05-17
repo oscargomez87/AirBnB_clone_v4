@@ -110,7 +110,7 @@ button:hover {
 .locations > h4, .amenities > h4 {
     font-weight: 400;
     font-size: 14px;
-    margin: 0 0 5px 0;
+    margin-left: 15%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
