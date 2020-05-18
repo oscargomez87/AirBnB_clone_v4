@@ -42,11 +42,12 @@ button:hover {
     font-size: 14px;
 }
 .locations {
-    height: 100%;
+    height: -webkit-fill-available;
     width: 25%;
     border-right: 1px solid #DDDDDD;
 }
 .amenities {
+    height: -webkit-fill-available;
     width: 25%;
 }
 
