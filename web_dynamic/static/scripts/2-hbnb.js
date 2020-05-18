@@ -31,6 +31,6 @@ $(document).ready(function () {
     }
   })
     .fail(function() {
-      alert( "error" );
+      alert( "Error: unable to connect to API" );
     });
 });
