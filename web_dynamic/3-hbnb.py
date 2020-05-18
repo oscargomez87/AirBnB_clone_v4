@@ -35,9 +35,6 @@ def hbnb():
 
     places = storage.all(Place).values()
 
-    for place in places:
-        print(place)
-
     places = sorted(places, key=lambda k: k.name)
 
     template_context = {
