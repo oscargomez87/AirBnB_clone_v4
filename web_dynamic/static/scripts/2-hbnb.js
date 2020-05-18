@@ -29,5 +29,8 @@ $(document).ready(function () {
     } else {
       $('DIV#api_status').removeClass('available');
     }
-  });
+  })
+    .fail(function() {
+      alert( "error" );
+    });
 });
