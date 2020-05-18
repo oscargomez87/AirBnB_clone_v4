@@ -30,7 +30,4 @@ $(document).ready(function () {
       $('DIV#api_status').removeClass('available');
     }
   })
-    .fail(function() {
-      alert( "Error: unable to connect to API" );
-    });
 });
